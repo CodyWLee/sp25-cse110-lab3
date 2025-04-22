@@ -1,0 +1,209 @@
+:root {
+  --primary-color: #3498db;
+  --accent-color: #e74c3c;
+  --fallback-color: #0077cc;
+  --font-stack: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color, #0077cc); /* fallback color added */
+  color: white;
+  font-family: var(--font-stack, Arial, sans-serif);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: hsl(210, 100%, 40%);
+  padding: 20px;
+  text-align: center;
+}
+
+header div:first-child {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header div + div {
+  font-style: italic;
+}
+
+nav ul {
+  background-color: #004d7a;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: square;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+section > div {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+ul > li {
+  margin-left: 20px;
+  color: #eee;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-color, red);
+}
+
+input[type="radio"] {
+  accent-color: color-mix(in srgb, red 70%, white);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px; /* Fixed padding value */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-box {
+  display: inline-block;
+  background-color: #222;
+  padding: 10px;
+  margin: 5px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.flex-container > div {
+  flex: 1;
+  background-color: #222;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-container > div {
+  background-color: #333;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container,
+  .grid-container {
+    display: block;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+}
+
+
+.class-example {
+  font-weight: bold;
+}
+
+#id-example {
+  font-style: italic;
+}
+
+[title="example"] {
+  text-transform: uppercase;
+}
+
+h2, h4 {
+  color: lightblue;
+}
+
+section p {
+  margin-top: 10px;
+}
+
+section > p {
+  font-size: 1.1em;
+}
+
+h2 ~ p {
+  color: #ccc;
+}
+
+h2 + ol {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+p.highlight {
+  background-color: yellow;
+}
+
+div:has(> em) {
+  border: 2px dashed #fff;
+  padding: 10px;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+details p {
+  color: #aaa;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
