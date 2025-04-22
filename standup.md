@@ -2,9 +2,9 @@
 ##Date and Time<br/>
 ###Role Call<br/>
 ```
--Jesse
-*James
-+Meowth
+- Jesse
+* James
++ Meowth
 ```
 ### Agenda:
 1. Plan
