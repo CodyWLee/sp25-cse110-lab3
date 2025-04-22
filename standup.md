@@ -1,6 +1,6 @@
-# **Meeing**<br/>
-##Date and Time<br/>
-###Role Call<br/>
+# **Meeting**<br/>
+## Date and Time<br/>
+### Role Call<br/>
 ```
 - Jesse
 * James
